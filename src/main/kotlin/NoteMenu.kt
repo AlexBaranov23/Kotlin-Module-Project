@@ -5,7 +5,7 @@ class NoteMenu(private val menuHandler: MenuHandler, private val archive: Archiv
         }.toMutableList()
 
         options.add(0, "Создать заметку" to { createNote() })
-        options.add("Назад" to { /* No action, just exit */ })
+        options.add("Назад" to { })
 
         menuHandler.displayMenu(options)
     }
